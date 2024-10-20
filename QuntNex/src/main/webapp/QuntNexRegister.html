@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/011/004/883/non_2x/triangular-abstract-with-security-symbol-circuit-board-modern-future-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        form {
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%; /* Make the form responsive */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 24px; /* Smaller heading on mobile */
+            }
+
+            form {
+                padding: 15px; /* Less padding on smaller screens */
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="number"] {
+                padding: 8px; /* Smaller padding for input fields */
+            }
+
+            input[type="submit"] {
+                font-size: 14px; /* Smaller font size for the button */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form action="/QuntNex/QuntNexRegister" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password:</label></td>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="qualification">Qualification:</label></td>
+                <td><input type="text" id="qualification" name="qualification" required></td>
+            </tr>
+            <tr>
+                <td><label for="cgpa">CGPA:</label></td>
+                <td><input type="number" step="0.01" id="cgpa" name="cgpa" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
